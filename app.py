@@ -456,8 +456,6 @@ if ver_formula == "Sí":
     st.write(f"**T** = {T} K")
     st.write(f"**n** = {n} moles")
 
-st.set_page_config(page_title="Mini Buscador Temático", layout="centered")
-
 # Título de la app
 st.title("🔎 Buscador Temático - Estilo Google")
 
