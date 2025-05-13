@@ -196,9 +196,190 @@ ejemplos = {
             ],
             "Impacto militar": "El río Ganges es crucial para muchas bases militares en India; su contaminación afecta la seguridad del agua.",
             "Imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ganges_river.jpg"
+    ]"Contaminación por plásticos": [
+        {
+            "Ejemplo": "Isla de plásticos del Pacífico (Great Pacific Garbage Patch)",
+            "Lugar": "Océano Pacífico",
+            "Descripción": "Una gran acumulación de plásticos flotantes afecta la vida marina, que ingiere estos plásticos o se enreda en ellos.",
+            "Consecuencias": [
+                "Daños a la fauna marina",
+                "Entradas de microplásticos en la cadena alimentaria",
+                "Destrucción de hábitats marinos"
+            ],
+            "Impacto militar": "La contaminación por plásticos interfiere con las actividades marítimas y las capacidades de las flotas militares, que operan en áreas afectadas.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/4/44/Great_Pacific_Garbage_Patch_-_NASA.jpg"
+        },
+        {
+            "Ejemplo": "Contaminación por plásticos en el Mediterráneo",
+            "Lugar": "Mediterráneo",
+            "Descripción": "El Mediterráneo se ha convertido en uno de los mares más contaminados por plásticos, afectando sus ecosistemas marinos.",
+            "Consecuencias": [
+                "Contaminación de la biodiversidad marina",
+                "Acumulación de plásticos en playas",
+                "Daño a la pesca local"
+            ],
+            "Impacto militar": "La contaminación puede obstaculizar las operaciones navales debido a la acumulación de desechos plásticos en los puertos y la costa.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Mediterranean_plastic_pollution.jpg"
+        },
+        {
+            "Ejemplo": "Tiburones y tortugas atrapados en plásticos",
+            "Lugar": "Océano Atlántico",
+            "Descripción": "Los plásticos atrapados en los océanos han causado la muerte de miles de especies marinas, incluidos tiburones y tortugas.",
+            "Consecuencias": [
+                "Muerte de fauna marina",
+                "Daños a los ecosistemas acuáticos",
+                "Aumento de la contaminación por microplásticos"
+            ],
+            "Impacto militar": "La presencia de plásticos en el océano también puede afectar las misiones militares en áreas costeras al interferir con el equipo de sonar.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2b/Turtle_plastic_pollution.jpg"
+        },
+        {
+            "Ejemplo": "Contaminación por plásticos en la Antártida",
+            "Lugar": "Antártida",
+            "Descripción": "Los plásticos han llegado incluso a la remota Antártida, afectando ecosistemas delicados.",
+            "Consecuencias": [
+                "Contaminación de los ecosistemas frágiles",
+                "Destrucción de hábitats de especies endémicas",
+                "Aumento de microplásticos"
+            ],
+            "Impacto militar": "La presencia de desechos plásticos interfiere con las operaciones de bases científicas y militares en la región polar.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/5/58/Antarctica_plastic_pollution.jpg"
+        },
+        {
+            "Ejemplo": "Contaminación por plásticos en las playas de Brasil",
+            "Lugar": "Brasil",
+            "Descripción": "Las playas de Brasil han sufrido una grave contaminación por plásticos, que afecta tanto al turismo como a los ecosistemas costeros.",
+            "Consecuencias": [
+                "Afectación de ecosistemas marinos",
+                "Impacto económico en el turismo",
+                "Acumulación de desechos en playas"
+            ],
+            "Impacto militar": "Los desechos plásticos en las costas brasileñas afectan las operaciones navales y el acceso a bases militares cercanas a la costa.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Brazil_beach_plastic_pollution.jpg"
         }
-    ]
-    # Continúa agregando más ejemplos para plástico, petróleo y ruido
+    ],
+    "Contaminación por petróleo": [
+        {
+            "Ejemplo": "Derrame de BP en el Golfo de México (2010)",
+            "Lugar": "Golfo de México, EE.UU.",
+            "Descripción": "Uno de los derrames de petróleo más grandes de la historia, el vertido de BP destruyó ecosistemas y afectó gravemente la vida marina.",
+            "Consecuencias": [
+                "Destrucción masiva de ecosistemas",
+                "Pérdida de especies marinas",
+                "Afectación de industrias pesqueras"
+            ],
+            "Impacto militar": "El derrame afectó las operaciones de las bases navales cercanas al golfo debido a los peligros derivados del petróleo.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Deepwater_Horizon_oil_spill.jpg"
+        },
+        {
+            "Ejemplo": "Derrame de Exxon Valdez (1989)",
+            "Lugar": "Alaska, EE.UU.",
+            "Descripción": "El derrame de Exxon Valdez fue otro desastre ecológico masivo, liberando millones de barriles de petróleo en el mar.",
+            "Consecuencias": [
+                "Muerte de miles de aves y mamíferos marinos",
+                "Destrucción de hábitats naturales",
+                "Contaminación de playas y costas"
+            ],
+            "Impacto militar": "El derrame también interrumpió las rutas navales y las operaciones de las bases militares cercanas.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Exxon_valdez_oil_spill.jpg"
+        },
+        {
+            "Ejemplo": "Derrame de petróleo en la costa de Nigeria (2008)",
+            "Lugar": "Nigeria",
+            "Descripción": "Los frecuentes derrames de petróleo en el delta del Níger han tenido efectos devastadores sobre el medio ambiente y las comunidades locales.",
+            "Consecuencias": [
+                "Contaminación de aguas y suelos",
+                "Daños a la salud humana",
+                "Destrucción de ecosistemas locales"
+            ],
+            "Impacto militar": "Los derrames de petróleo dificultan las operaciones militares en la región debido a los daños a los ecosistemas.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/c/cd/NG_Oil_Spill.jpg"
+        },
+        {
+            "Ejemplo": "Derrame de petróleo en el río Amazonas (2016)",
+            "Lugar": "Amazonas, Ecuador",
+            "Descripción": "Un derrame masivo de petróleo afectó la biodiversidad del Amazonas, causando daños irreparables a los ecosistemas.",
+            "Consecuencias": [
+                "Contaminación del agua potable",
+                "Muerte de especies animales",
+                "Destrucción de la biodiversidad"
+            ],
+            "Impacto militar": "La contaminación afectó las capacidades de las fuerzas militares en la región, particularmente en sus operaciones de rescate.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Amazon_oil_spill.jpg"
+        },
+        {
+            "Ejemplo": "Derrame de petróleo en la isla de Sagar (2010)",
+            "Lugar": "India",
+            "Descripción": "Un derrame de petróleo afectó la isla de Sagar, creando una catástrofe ecológica en esta región costera.",
+            "Consecuencias": [
+                "Contaminación de playas",
+                "Muerte de peces y aves",
+                "Impacto en la pesca local"
+            ],
+            "Impacto militar": "Las bases militares cercanas a la costa se vieron afectadas por el derrame, que dificultó las actividades logísticas.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Island_Sagar_Oil_Spill.jpg"
+        }
+    ],
+    "Contaminación por ruido": [
+        {
+            "Ejemplo": "Contaminación acústica en Nueva York",
+            "Lugar": "Nueva York, EE.UU.",
+            "Descripción": "La ciudad de Nueva York es una de las más ruidosas del mundo debido al tráfico, la construcción y la vida urbana.",
+            "Consecuencias": [
+                "Problemas auditivos en la población",
+                "Estrés y trastornos del sueño",
+                "Reducción de la calidad de vida"
+            ],
+            "Impacto militar": "El ruido constante puede afectar el rendimiento de las tropas en zonas urbanas o cercanas a áreas industriales.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Traffic_in_NYC.jpg"
+        },
+        {
+            "Ejemplo": "Contaminación acústica en Londres",
+            "Lugar": "Londres, Reino Unido",
+            "Descripción": "El ruido producido por el tráfico, el transporte público y las actividades comerciales en Londres genera graves problemas de salud pública.",
+            "Consecuencias": [
+                "Aumento de enfermedades cardiovasculares",
+                "Interrupción del descanso nocturno",
+                "Incremento de problemas psicológicos"
+            ],
+            "Impacto militar": "El ruido urbano puede interferir con las comunicaciones y operaciones militares, especialmente en operaciones de vigilancia o control.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e6/London_traffic_noise.jpg"
+        },
+        {
+            "Ejemplo": "Ruido en zonas industriales de China",
+            "Lugar": "China",
+            "Descripción": "Las zonas industriales de China son conocidas por su ruido constante debido a la maquinaria pesada y la actividad manufacturera.",
+            "Consecuencias": [
+                "Daño a la audición de los trabajadores",
+                "Problemas de salud mental",
+                "Aumento de los trastornos de sueño"
+            ],
+            "Impacto militar": "Las bases cercanas a estas áreas podrían verse afectadas por el ruido industrial, dificultando las tareas de concentración de las tropas.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4f/China_factory_noise.jpg"
+        },
+        {
+            "Ejemplo": "Ruido por tráfico aéreo en los aeropuertos",
+            "Lugar": "Aeropuerto de Los Ángeles, EE.UU.",
+            "Descripción": "El ruido generado por los aviones y el tráfico aéreo afecta gravemente a las comunidades cercanas.",
+            "Consecuencias": [
+                "Estrés crónico",
+                "Enfermedades auditivas",
+                "Interrupción del descanso nocturno"
+            ],
+            "Impacto militar": "El ruido en zonas de aeropuertos militares interfiere con las operaciones y los entrenamientos aéreos.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Los_Angeles_airport_noise.jpg"
+        },
+        {
+            "Ejemplo": "Contaminación acústica por tráfico ferroviario",
+            "Lugar": "Madrid, España",
+            "Descripción": "El ruido generado por el tráfico ferroviario afecta a los residentes cercanos a las vías.",
+            "Consecuencias": [
+                "Aumento de la presión arterial",
+                "Alteraciones en los patrones de sueño",
+                "Reducción de la calidad de vida"
+            ],
+            "Impacto militar": "El ruido ferroviario interfiere con las operaciones de vigilancia y control de las fuerzas armadas en áreas cercanas a las vías.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Madrid_rail_traffic_noise.jpg"
 }
 
 # Selector de categorías
