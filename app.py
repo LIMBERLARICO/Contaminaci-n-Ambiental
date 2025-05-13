@@ -457,43 +457,42 @@ if ver_formula == "Sí":
     st.write(f"**n** = {n} moles")
 
 
-# Título
-st.title("💡 Responde todas tus dudas")
+# Configuración de la página
+st.set_page_config(page_title="Buscador Temático", layout="centered")
 
-# Instrucción
-st.markdown("Escribe cualquier pregunta o tema sobre el cual quieras saber más:")
+# Título de la aplicación
+st.title("🔍 Buscador Temático - Responde tus dudas")
 
-# Diccionario de respuestas simples predefinidas
-respuestas = {
-    "química": "La química estudia la composición, estructura y propiedades de la materia. ¿Quieres ver fórmulas o reacciones?",
-    "contaminación": "La contaminación es la introducción de sustancias nocivas en el medio ambiente. Existen varios tipos: aire, agua, suelo, etc.",
-    "historia": "La historia estudia el pasado de la humanidad. ¿Te interesa alguna civilización o periodo en específico?",
-    "guerra": "Las guerras han sido eventos cruciales en la historia. ¿Buscas información sobre alguna en particular?",
-    "tecnología": "La tecnología transforma la sociedad. Desde IA hasta satélites, ¿qué tema te interesa más?",
-    "streamlit": "Streamlit es un framework de Python para crear apps web interactivas fácilmente. Si tienes dudas sobre cómo usarlo, puedo ayudarte.",
-    "matemáticas": "Las matemáticas son el estudio de los números, las figuras y las estructuras. ¿Te gustaría aprender sobre álgebra, geometría o cálculo?",
-    "cultura general": "Cultura general abarca conocimiento sobre diversas áreas como arte, geografía, historia, etc. ¿Sobre qué área te gustaría saber más?"
-}
+# Ingresar tu API Key de Google y el ID del motor de búsqueda (CSE ID)
+api_key = 'tu_api_key_de_google'  # Reemplaza con tu API Key
+cse_id = 'tu_cse_id'  # Reemplaza con tu CSE ID
 
-# Entrada del usuario para hacer una pregunta
-pregunta = st.text_input("💬 ¿Sobre qué tema quieres saber más?")
+# Función para realizar la búsqueda en Google
+def google_search(query, api_key, cse_id, num_results=5):
+    service = build("customsearch", "v1", developerKey=api_key)
+    res = service.cse().list(q=query, cx=cse_id, num=num_results).execute()
+    return res['items']
 
-# Lógica para mostrar respuesta
-if pregunta:
-    st.subheader("📚 Resultado de tu búsqueda:")
-    encontrada = False
-    for clave, respuesta in respuestas.items():
-        if clave in pregunta.lower():
-            st.success(f"**Respuesta:** {respuesta}")
-            encontrada = True
-            break
+# Interfaz para que el usuario ingrese una pregunta
+query = st.text_input("💬 Escribe tu pregunta o tema de búsqueda:")
 
-    if not encontrada:
-        st.info("❔ No encontré una respuesta directa. ¿Quieres hacer otra pregunta o intentar otro tema?")
+if query:
+    with st.spinner("Buscando..."):
+        results = google_search(query, api_key, cse_id)
+
+    if results:
+        st.subheader("🔍 Resultados encontrados:")
+
+        for i, result in enumerate(results, start=1):
+            st.markdown(f"**{i}.** [{result['title']}]({result['link']})")
+            st.write(result['snippet'])
+            st.markdown("---")
+    else:
+        st.write("Lo siento, no se encontraron resultados.")
+
 else:
-    st.info("Escribe un tema o pregunta para buscar información.")
-    
-# Opciones adicionales para mejorar la interacción
+    st.info("Escribe algo en la barra de búsqueda para comenzar a buscar.")
+
+# Información adicional
 st.markdown("---")
-st.write("Puedes probar preguntando sobre temas como 'química', 'historia', 'guerra', 'matemáticas', 'contaminación', entre otros.")
-st.caption("Hecha con ❤️ usando Streamlit")
+st.markdown("Esta aplicación utiliza el motor de búsqueda de Google Custom Search para encontrar información relacionada con tus preguntas.")
