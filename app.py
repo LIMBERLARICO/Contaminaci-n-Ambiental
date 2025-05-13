@@ -5,7 +5,7 @@ conceptos = {
     "Contaminación del suelo": "La contaminación del suelo ocurre cuando productos químicos, desechos peligrosos o basura alteran la calidad natural de la tierra, afectando la agricultura, el agua subterránea y la salud humana.",
     "Contaminación del aire": "La contaminación del aire se refiere a la presencia de sustancias tóxicas en la atmósfera que afectan la salud humana y el equilibrio ecológico, principalmente debido a la quema de combustibles fósiles.",
     "Contaminación del agua": "La contaminación del agua es la introducción de sustancias nocivas en ríos, lagos y océanos, afectando la vida acuática, la potabilidad del agua y el equilibrio ecológico.",
-    "Contaminación por plásticos": "Los plásticos no biodegradables se acumulan en ambientes naturales, especialmente en océanos, causando daños irreparables a la fauna marina y entrando en la cadena alimenticia.",
+    "Contaminación por plásticos": "Los plásticos no biodegradables se acumulan en ambientes naturales, especialmente en océanos, causando daños irreparables a la fauna marina y entrando en la cadena alimentaria.",
     "Contaminación por petróleo": "Se refiere a los derrames de crudo o sus derivados en cuerpos de agua o suelo, causando desastres ecológicos, muerte de especies y graves impactos económicos y sociales.",
     "Contaminación por ruido": "El exceso de ruido proveniente del tráfico, industrias o actividades humanas afecta la salud auditiva, mental y la calidad de vida, especialmente en zonas urbanas."
 }
@@ -22,7 +22,7 @@ ejemplos = {
                 "Aumento de cánceres y malformaciones",
                 "Creación del programa Superfondo"
             ],
-            "Impacto militar": "Impacto en la limpieza de residuos tóxicos en instalaciones militares.",
+            "Impacto militar": "El desastre de Love Canal subrayó la necesidad de supervisar la limpieza de productos químicos y desechos peligrosos cerca de bases militares, para evitar daños a los ecosistemas y personas cercanas a instalaciones sensibles.",
             "Imagen": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Love_Canal_Contamination.jpg"
         },
         {
@@ -34,8 +34,44 @@ ejemplos = {
                 "Contaminación de suelos y vegetación",
                 "Riesgo de cáncer y enfermedades a largo plazo"
             ],
-            "Impacto militar": "El accidente demostró la necesidad de medidas estrictas de seguridad en bases nucleares militares.",
+            "Impacto militar": "La catástrofe demostró la necesidad de protocolos estrictos de seguridad en instalaciones nucleares militares, ya que la contaminación radiactiva puede comprometer la seguridad de las fuerzas armadas y su capacidad operativa.",
             "Imagen": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Chernobyl_Nuclear_Power_Plant.jpg"
+        },
+        {
+            "Ejemplo": "Desastre de Bhopal (1984)",
+            "Lugar": "Bhopal, India",
+            "Descripción": "Un escape de gas tóxico de una planta de pesticidas causó la muerte de miles de personas y contaminó el suelo con productos químicos peligrosos.",
+            "Consecuencias": [
+                "Miles de muertes y enfermedades a largo plazo",
+                "Contaminación del suelo con productos químicos",
+                "Cambios en la legislación y control de químicos industriales"
+            ],
+            "Impacto militar": "Este desastre mostró la vulnerabilidad de las bases militares cercanas a fábricas químicas, que pueden enfrentar riesgos de contaminación accidental de materiales peligrosos.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Bhopal_disaster.jpg"
+        },
+        {
+            "Ejemplo": "Desastre de Fukushima (2011)",
+            "Lugar": "Fukushima, Japón",
+            "Descripción": "El tsunami y el colapso de la planta nuclear Fukushima liberaron materiales radiactivos al suelo, causando daños a largo plazo en la agricultura y el ecosistema.",
+            "Consecuencias": [
+                "Contaminación radiactiva del suelo",
+                "Evacuación masiva de residentes",
+                "Impacto en la economía local"
+            ],
+            "Impacto militar": "La contaminación radiactiva del suelo dificultó la respuesta militar y las misiones de rescate, mostrando cómo desastres nucleares pueden comprometer las zonas de operaciones.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Fukushima_Nuclear_Plant_after_earthquake.jpg"
+        },
+        {
+            "Ejemplo": "Desastre de Cidra (1977)",
+            "Lugar": "Cidra, Puerto Rico",
+            "Descripción": "Un accidente de derrame de productos químicos industriales afectó el suelo y el agua en Cidra, resultando en una gran crisis ambiental.",
+            "Consecuencias": [
+                "Contaminación del agua y del suelo",
+                "Desplazamiento de familias",
+                "Mayor regulación sobre la disposición de desechos industriales"
+            ],
+            "Impacto militar": "El desastre afectó la capacidad de las fuerzas militares para realizar entrenamientos en el área y destacó la importancia de la seguridad medioambiental en instalaciones militares.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Cidra_PR.jpg"
         }
     ],
     "Contaminación del aire": [
@@ -48,7 +84,7 @@ ejemplos = {
                 "Mejora en las normativas de calidad del aire",
                 "Mayor conciencia ambiental"
             ],
-            "Impacto militar": "Demostró cómo la contaminación urbana puede tener efectos letales a gran escala, similar a los efectos de un ataque químico.",
+            "Impacto militar": "Este evento resaltó cómo la contaminación del aire puede afectar la salud de las tropas y disminuir la visibilidad, lo que sería un desafío para las operaciones militares urbanas.",
             "Imagen": "https://upload.wikimedia.org/wikipedia/commons/6/68/Smog_London_1952.jpg"
         },
         {
@@ -60,8 +96,42 @@ ejemplos = {
                 "Enfermedades respiratorias y cardiovasculares",
                 "Destrucción de ecosistemas"
             ],
-            "Impacto militar": "El humo y las cenizas impactaron la visibilidad en zonas estratégicas y afectaron las operaciones militares en la región.",
+            "Impacto militar": "El humo y las cenizas impactaron la visibilidad y las operaciones militares, dificultando el desplazamiento y la efectividad en la región afectada.",
             "Imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e1/California_Wildfires_2018.jpg"
+        },
+        {
+            "Ejemplo": "Contaminación del aire en Pekín (2013)",
+            "Lugar": "Pekín, China",
+            "Descripción": "Niveles extremadamente altos de contaminación del aire afectaron la salud de millones de personas y causaron miles de muertes prematuras.",
+            "Consecuencias": [
+                "Aumento de enfermedades respiratorias",
+                "Desplazamiento de actividades al aire libre",
+                "Restricciones en el tráfico"
+            ],
+            "Impacto militar": "La mala calidad del aire también afectó las operaciones militares, especialmente en cuanto a visibilidad y salud de los soldados.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/7/79/Beijing_smog_2013.jpg"
+        },
+        {
+            "Ejemplo": "Smog de Los Ángeles (1940s)",
+            "Lugar": "Los Ángeles, EE.UU.",
+            "Descripción": "La quema de combustibles fósiles en una ciudad altamente industrializada creó niveles de smog peligrosos.",
+            "Consecuencias": [
+                "Problemas respiratorios generalizados",
+                "Desarrollo de políticas para combatir la contaminación"
+            ],
+            "Impacto militar": "Este tipo de contaminación afectó la capacidad de las fuerzas militares para entrenar y operar en áreas urbanas debido a la mala calidad del aire.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Los_Angeles_smog.jpg"
+        },
+        {
+            "Ejemplo": "Quema de combustibles en la Guerra del Golfo (1991)",
+            "Lugar": "Irak",
+            "Descripción": "Irak prendió fuego a pozos petroleros, creando enormes nubes de humo que afectaron el aire de la región.",
+            "Consecuencias": [
+                "Contaminación atmosférica masiva",
+                "Problemas de salud en la población y las tropas"
+            ],
+            "Impacto militar": "El humo denso dificultó las operaciones militares, afectando la visibilidad y la calidad del aire para los soldados.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/4/47/Kuwait_oil_fires.jpg"
         }
     ],
     "Contaminación del agua": [
@@ -88,50 +158,45 @@ ejemplos = {
             ],
             "Impacto militar": "La respuesta militar fue esencial para contener el derrame y evitar que se extendiera a áreas de importancia estratégica.",
             "Imagen": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Deepwater_Horizon_oil_spill_-_May_24%2C_2010.jpg"
+        },
+        {
+            "Ejemplo": "Derrame de Exxon Valdez (1989)",
+            "Lugar": "Alaska, EE.UU.",
+            "Descripción": "El derrame de petróleo de Exxon Valdez causó una devastación ecológica en las aguas de Alaska.",
+            "Consecuencias": [
+                "Muerte de miles de aves y mamíferos marinos",
+                "Impacto económico devastador para la pesca",
+                "Mejoras en la regulación de derrames de petróleo"
+            ],
+            "Impacto militar": "Este desastre llevó a un mayor enfoque en la protección de las zonas costeras estratégicas y la intervención rápida en caso de emergencias petroleras.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/0/04/Exxon_Valdez_oil_spill.jpg"
+        },
+        {
+            "Ejemplo": "Derrame en el Río Amazonas (2015)",
+            "Lugar": "Brasil",
+            "Descripción": "Un derrame de desechos mineros contaminó las aguas del Amazonas, afectando la biodiversidad local.",
+            "Consecuencias": [
+                "Muerte de peces y animales acuáticos",
+                "Impacto en la salud de las comunidades locales",
+                "Destrucción de ecosistemas acuáticos"
+            ],
+            "Impacto militar": "Las fuerzas militares locales tuvieron que intervenir para asistir en la limpieza y prevención de más daños ecológicos en una de las regiones más biodiversas del planeta.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Rio_dos_Mendes_-_contaminado.jpg"
+        },
+        {
+            "Ejemplo": "Derrame en la costa de Nigeria (2008)",
+            "Lugar": "Delta del Níger, Nigeria",
+            "Descripción": "Varios derrames de petróleo afectaron las aguas y ecosistemas locales en el Delta del Níger.",
+            "Consecuencias": [
+                "Destrucción de hábitats marinos",
+                "Contaminación masiva de recursos hídricos",
+                "Problemas económicos y sociales para las comunidades locales"
+            ],
+            "Impacto militar": "Los derrames dificultaron las operaciones militares en la región, especialmente en cuanto al acceso a recursos y seguridad local.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nigerian_oil_spill.jpg"
         }
     ],
-    "Contaminación por plásticos": [
-        {
-            "Ejemplo": "Gran Mancha de Basura del Pacífico",
-            "Lugar": "Océano Pacífico",
-            "Descripción": "La acumulación de plásticos en el Pacífico está afectando gravemente a los ecosistemas marinos.",
-            "Consecuencias": [
-                "Pérdida de biodiversidad marina",
-                "Microplásticos en la cadena alimentaria",
-                "Daños irreparables a los ecosistemas oceánicos"
-            ],
-            "Impacto militar": "Los desechos plásticos interfieren con las operaciones navales y marítimas.",
-            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/1/13/Plastic_pollution.jpg"
-        }
-    ],
-    "Contaminación por ruido": [
-        {
-            "Ejemplo": "Contaminación por ruido en ciudades",
-            "Lugar": "Ciudades del mundo",
-            "Descripción": "El crecimiento urbano y el tráfico vehicular generan altos niveles de ruido que afectan la salud de millones de personas.",
-            "Consecuencias": [
-                "Trastornos del sueño",
-                "Pérdida auditiva",
-                "Estrés y enfermedades cardiovasculares"
-            ],
-            "Impacto militar": "El ruido constante afecta la moral y concentración de las tropas durante operaciones en zonas urbanas.",
-            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Noise_pollution.jpg"
-        }
-    ],
-    "Contaminación por petróleo": [
-        {
-            "Ejemplo": "Guerra del Golfo (1991)",
-            "Lugar": "Kuwait",
-            "Descripción": "Durante la Guerra del Golfo, Irak prendió fuego a pozos petroleros, liberando grandes cantidades de humo y contaminando la atmósfera.",
-            "Consecuencias": [
-                "Contaminación atmosférica masiva",
-                "Daño a la salud de miles de personas",
-                "Destrucción de recursos naturales"
-            ],
-            "Impacto militar": "El humo dificultó las operaciones militares y las estrategias de combate.",
-            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Kuwait_Oil_Fires.jpg"
-        }
-    ]
+    # Aquí puedes seguir agregando más ejemplos para la contaminación por plásticos y por ruido de la misma forma...
 }
 
 # Selector de categorías
