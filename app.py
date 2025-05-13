@@ -53,9 +53,9 @@ if tipo:
 
     st.subheader(f"📘 {tipo}")
     
-    # Mostrar imagen si existe
+    # Mostrar imagen si existe y ajustada a todo el ancho del contenedor
     if "Imagen" in data:
-        st.image(data["Imagen"], use_column_width=True, caption=f"Ejemplo visual de {tipo.lower()}")
+        st.image(data["Imagen"], use_container_width=True, caption=f"Ejemplo visual de {tipo.lower()}")
 
     st.markdown(f"**🧾 Descripción:** {data['Descripción']}")
 
