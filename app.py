@@ -456,8 +456,41 @@ if ver_formula == "Sí":
     st.write(f"**T** = {T} K")
     st.write(f"**n** = {n} moles")
 
-# Opción de búsqueda de ayuda
-buscar_ayuda = st.text_input("🔎 Escribe tu consulta para buscar ayuda o información:")
+import streamlit as st
 
-if buscar_ayuda:
-    mostrar_ayuda(buscar_ayuda)
+st.set_page_config(page_title="Mini Buscador Temático", layout="centered")
+
+# Título de la app
+st.title("🔎 Buscador Temático - Estilo Google")
+
+# Instrucción
+st.markdown("Escribe cualquier palabra clave o tema libre y te daremos una respuesta:")
+
+# Entrada del usuario
+pregunta = st.text_input("💬 ¿Sobre qué tema quieres saber más?")
+
+# Diccionario de respuestas simples
+respuestas = {
+    "química": "La química estudia la composición, estructura y propiedades de la materia. ¿Quieres ver fórmulas o reacciones?",
+    "contaminación": "La contaminación es la introducción de sustancias nocivas en el medio ambiente. Puedes investigar tipos: aire, agua, suelo, etc.",
+    "historia": "La historia estudia el pasado de la humanidad. ¿Te interesa alguna civilización o período en específico?",
+    "guerra": "Las guerras han marcado profundamente la historia. ¿Buscas información sobre alguna en particular?",
+    "tecnología": "La tecnología transforma la sociedad. Desde IA hasta satélites, ¿qué tema específico te interesa?",
+    "streamlit": "Streamlit es un framework de Python para crear apps web interactivas de forma sencilla."
+}
+
+# Mostrar respuesta
+if pregunta:
+    st.subheader("📚 Resultado de tu búsqueda:")
+    encontrada = False
+    for clave in respuestas:
+        if clave in pregunta.lower():
+            st.success(respuestas[clave])
+            encontrada = True
+            break
+    if not encontrada:
+        st.info("❔ No encontré una respuesta específica, pero pronto podré conectarme con más fuentes o IA para ayudarte mejor.")
+
+# Mensaje de cierre
+st.markdown("---")
+st.caption("App educativa simple - Hecha con ❤️ usando Streamlit")
