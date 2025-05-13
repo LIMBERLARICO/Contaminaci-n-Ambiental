@@ -456,10 +456,6 @@ if ver_formula == "Sí":
     st.write(f"**T** = {T} K")
     st.write(f"**n** = {n} moles")
 
-
-# Configuración de la página
-st.set_page_config(page_title="Buscador Temático", layout="centered")
-
 # Título de la aplicación
 st.title("🔍 Buscador Temático - Responde tus dudas")
 
