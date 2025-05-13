@@ -457,26 +457,28 @@ if ver_formula == "Sí":
     st.write(f"**n** = {n} moles")
 
 
-# Título de la app
-st.title("🔎 Buscador Temático - Estilo Google")
+# Título
+st.title("💡 Responde todas tus dudas")
 
 # Instrucción
-st.markdown("Escribe cualquier palabra clave o tema libre y te daremos una respuesta:")
+st.markdown("Escribe cualquier pregunta o tema sobre el cual quieras saber más:")
 
-# Entrada del usuario
-pregunta = st.text_input("💬 ¿Sobre qué tema quieres saber más?")
-
-# Diccionario de respuestas simples
+# Diccionario de respuestas simples predefinidas
 respuestas = {
     "química": "La química estudia la composición, estructura y propiedades de la materia. ¿Quieres ver fórmulas o reacciones?",
-    "contaminación": "La contaminación es la introducción de sustancias nocivas en el medio ambiente. Puedes investigar tipos: aire, agua, suelo, etc.",
-    "historia": "La historia estudia el pasado de la humanidad. ¿Te interesa alguna civilización o período en específico?",
-    "guerra": "Las guerras han marcado profundamente la historia. ¿Buscas información sobre alguna en particular?",
-    "tecnología": "La tecnología transforma la sociedad. Desde IA hasta satélites, ¿qué tema específico te interesa?",
-    "streamlit": "Streamlit es un framework de Python para crear apps web interactivas de forma sencilla. Si tienes preguntas sobre cómo usarlo, puedo ayudarte."
+    "contaminación": "La contaminación es la introducción de sustancias nocivas en el medio ambiente. Existen varios tipos: aire, agua, suelo, etc.",
+    "historia": "La historia estudia el pasado de la humanidad. ¿Te interesa alguna civilización o periodo en específico?",
+    "guerra": "Las guerras han sido eventos cruciales en la historia. ¿Buscas información sobre alguna en particular?",
+    "tecnología": "La tecnología transforma la sociedad. Desde IA hasta satélites, ¿qué tema te interesa más?",
+    "streamlit": "Streamlit es un framework de Python para crear apps web interactivas fácilmente. Si tienes dudas sobre cómo usarlo, puedo ayudarte.",
+    "matemáticas": "Las matemáticas son el estudio de los números, las figuras y las estructuras. ¿Te gustaría aprender sobre álgebra, geometría o cálculo?",
+    "cultura general": "Cultura general abarca conocimiento sobre diversas áreas como arte, geografía, historia, etc. ¿Sobre qué área te gustaría saber más?"
 }
 
-# Mostrar respuesta
+# Entrada del usuario para hacer una pregunta
+pregunta = st.text_input("💬 ¿Sobre qué tema quieres saber más?")
+
+# Lógica para mostrar respuesta
 if pregunta:
     st.subheader("📚 Resultado de tu búsqueda:")
     encontrada = False
@@ -485,11 +487,13 @@ if pregunta:
             st.success(f"**Respuesta:** {respuesta}")
             encontrada = True
             break
+
     if not encontrada:
-        st.info("❔ No encontré una respuesta específica, pero puedo seguir buscando más información. ¿Tienes otra palabra clave?")
+        st.info("❔ No encontré una respuesta directa. ¿Quieres hacer otra pregunta o intentar otro tema?")
 else:
     st.info("Escribe un tema o pregunta para buscar información.")
     
-# Mensaje de cierre
+# Opciones adicionales para mejorar la interacción
 st.markdown("---")
-st.caption("App educativa simple - Hecha con ❤️ usando Streamlit")
+st.write("Puedes probar preguntando sobre temas como 'química', 'historia', 'guerra', 'matemáticas', 'contaminación', entre otros.")
+st.caption("Hecha con ❤️ usando Streamlit")
