@@ -407,3 +407,28 @@ for ejemplo in ejemplos[tipo]:
             st.write(f"- {c}")
         st.markdown("**🪖 Impacto militar:**")
         st.write(ejemplo["Impacto militar"])
+# Fórmula de los Gases Ideales PV = RTn
+st.subheader("🔬 Fórmula de los Gases Ideales: PV = RTn")
+
+# Ingresar los valores para la fórmula de gases ideales
+P = st.number_input("Introduce la presión (P) en atmósferas:", value=1.0)
+V = st.number_input("Introduce el volumen (V) en litros:", value=1.0)
+R = st.number_input("Introduce la constante de los gases ideales (R) en atm·L/(mol·K):", value=0.0821)
+T = st.number_input("Introduce la temperatura (T) en Kelvin:", value=298.15)  # Temperatura ambiente por defecto
+n = st.number_input("Introduce el número de moles (n):", value=1.0)
+
+# Calcular n si no es ingresado
+if n == 0:
+    st.warning("El número de moles no puede ser 0.")
+else:
+    # Resolver la fórmula para n
+    n_calculado = (P * V) / (R * T)
+    st.write(f"**Número de moles (n)**: {n_calculado:.2f} mols")
+    
+    # Mostrar cómo se usa la fórmula
+    st.markdown(f"### Fórmula: PV = RTn")
+    st.write(f"**P** = {P} atm")
+    st.write(f"**V** = {V} L")
+    st.write(f"**R** = {R} atm·L/(mol·K)")
+    st.write(f"**T** = {T} K")
+    st.write(f"**n (calculado)** = {n_calculado:.2f} moles")
