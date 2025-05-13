@@ -104,7 +104,7 @@ contaminaciones = {
             "Nombre": "Isla de plásticos en el Pacífico",
             "Año": "Siglo XXI",
             "Lugar": "Oceano Pacífico",
-            "Descripción": "Un gran cúmulo de basura plástica flotante, conocido como la "Gran Mancha de Basura del Pacífico", afecta a los ecosistemas marinos y a la vida acuática."
+           "Descripción": "Un gran cúmulo de basura plástica flotante, conocido como la \"Gran Mancha de Basura del Pacífico\", afecta a los ecosistemas marinos y a la vida acuática."
         },
         "Impacto militar": [
             "Las fuerzas armadas a menudo contribuyen a la contaminación de plásticos en zonas conflictivas.",
