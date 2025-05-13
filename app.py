@@ -407,28 +407,51 @@ for ejemplo in ejemplos[tipo]:
             st.write(f"- {c}")
         st.markdown("**🪖 Impacto militar:**")
         st.write(ejemplo["Impacto militar"])
-# Fórmula de los Gases Ideales PV = RTn
+# **Nueva sección para la Fórmula de los Gases Ideales**
+
+# Añadir una selección para la fórmula de los gases ideales
 st.subheader("🔬 Fórmula de los Gases Ideales: PV = RTn")
 
-# Ingresar los valores para la fórmula de gases ideales
-P = st.number_input("Introduce la presión (P) en atmósferas:", value=1.0)
-V = st.number_input("Introduce el volumen (V) en litros:", value=1.0)
-R = st.number_input("Introduce la constante de los gases ideales (R) en atm·L/(mol·K):", value=0.0821)
-T = st.number_input("Introduce la temperatura (T) en Kelvin:", value=298.15)  # Temperatura ambiente por defecto
-n = st.number_input("Introduce el número de moles (n):", value=1.0)
+# Preguntar al usuario si desea trabajar con la fórmula de los gases ideales
+ver_formula = st.selectbox("¿Deseas trabajar con la fórmula de los Gases Ideales?", ["No", "Sí"])
 
-# Calcular n si no es ingresado
-if n == 0:
-    st.warning("El número de moles no puede ser 0.")
-else:
-    # Resolver la fórmula para n
-    n_calculado = (P * V) / (R * T)
-    st.write(f"**Número de moles (n)**: {n_calculado:.2f} mols")
-    
-    # Mostrar cómo se usa la fórmula
-    st.markdown(f"### Fórmula: PV = RTn")
+if ver_formula == "Sí":
+    # Selección de la variable a calcular
+    opcion = st.selectbox("¿Qué variable deseas calcular?", ["Número de moles (n)", "Volumen (V)", "Temperatura (T)"])
+
+    # Ingresar los valores para la fórmula de gases ideales
+    P = st.number_input("Introduce la presión (P) en atmósferas:", value=1.0)
+    V = st.number_input("Introduce el volumen (V) en litros:", value=1.0)
+    R = st.number_input("Introduce la constante de los gases ideales (R) en atm·L/(mol·K):", value=0.0821)
+    T = st.number_input("Introduce la temperatura (T) en Kelvin:", value=298.15)  # Temperatura ambiente por defecto
+    n = st.number_input("Introduce el número de moles (n):", value=1.0)
+
+    # Calcular según la opción seleccionada
+    if opcion == "Número de moles (n)":
+        if P != 0 and V != 0 and R != 0 and T != 0:
+            n_calculado = (P * V) / (R * T)
+            st.write(f"**Número de moles (n) calculado:** {n_calculado:.2f} moles")
+        else:
+            st.warning("Asegúrate de que todos los valores sean diferentes de cero.")
+
+    elif opcion == "Volumen (V)":
+        if P != 0 and n != 0 and R != 0 and T != 0:
+            V_calculado = (n * R * T) / P
+            st.write(f"**Volumen (V) calculado:** {V_calculado:.2f} litros")
+        else:
+            st.warning("Asegúrate de que todos los valores sean diferentes de cero.")
+
+    elif opcion == "Temperatura (T)":
+        if P != 0 and V != 0 and n != 0 and R != 0:
+            T_calculado = (P * V) / (n * R)
+            st.write(f"**Temperatura (T) calculada:** {T_calculado:.2f} K")
+        else:
+            st.warning("Asegúrate de que todos los valores sean diferentes de cero.")
+
+    # Mostrar la fórmula utilizada
+    st.markdown("### Fórmula: PV = RTn")
     st.write(f"**P** = {P} atm")
     st.write(f"**V** = {V} L")
     st.write(f"**R** = {R} atm·L/(mol·K)")
     st.write(f"**T** = {T} K")
-    st.write(f"**n (calculado)** = {n_calculado:.2f} moles")
+    st.write(f"**n** = {n} moles")
