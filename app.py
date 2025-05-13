@@ -456,6 +456,7 @@ if ver_formula == "Sí":
     st.write(f"**T** = {T} K")
     st.write(f"**n** = {n} moles")
 
+
 # Configurar la página antes de cualquier otro comando
 st.set_page_config(page_title="Mini Buscador Temático", layout="centered")
 
