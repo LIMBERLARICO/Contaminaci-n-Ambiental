@@ -196,7 +196,9 @@ ejemplos = {
             ],
             "Impacto militar": "El río Ganges es crucial para muchas bases militares en India; su contaminación afecta la seguridad del agua.",
             "Imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Ganges_river.jpg"
-    ]"Contaminación por plásticos": [
+        }
+    ],
+    "Contaminación por plásticos": [
         {
             "Ejemplo": "Isla de plásticos del Pacífico (Great Pacific Garbage Patch)",
             "Lugar": "Océano Pacífico",
@@ -336,52 +338,53 @@ ejemplos = {
         {
             "Ejemplo": "Contaminación acústica en Londres",
             "Lugar": "Londres, Reino Unido",
-            "Descripción": "El ruido producido por el tráfico, el transporte público y las actividades comerciales en Londres genera graves problemas de salud pública.",
+            "Descripción": "El ruido generado por el tráfico vehicular y la construcción en Londres es una gran fuente de contaminación acústica.",
             "Consecuencias": [
-                "Aumento de enfermedades cardiovasculares",
-                "Interrupción del descanso nocturno",
-                "Incremento de problemas psicológicos"
+                "Aumento de la tasa de enfermedades cardiovasculares",
+                "Afectación a la salud mental",
+                "Disminución de la calidad del sueño"
             ],
-            "Impacto militar": "El ruido urbano puede interferir con las comunicaciones y operaciones militares, especialmente en operaciones de vigilancia o control.",
-            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/e/e6/London_traffic_noise.jpg"
+            "Impacto militar": "El ruido afecta las operaciones de las fuerzas armadas que requieren ambientes controlados para prácticas y simulaciones.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/1/18/London_Traffic.jpg"
         },
         {
-            "Ejemplo": "Ruido en zonas industriales de China",
-            "Lugar": "China",
-            "Descripción": "Las zonas industriales de China son conocidas por su ruido constante debido a la maquinaria pesada y la actividad manufacturera.",
+            "Ejemplo": "Contaminación acústica por aeropuertos",
+            "Lugar": "Cualquier aeropuerto principal",
+            "Descripción": "El ruido proveniente de los aviones en despegue y aterrizaje es una de las fuentes más fuertes de contaminación acústica.",
             "Consecuencias": [
-                "Daño a la audición de los trabajadores",
-                "Problemas de salud mental",
-                "Aumento de los trastornos de sueño"
+                "Estrés en las comunidades cercanas",
+                "Problemas de audición",
+                "Aumento de la irritabilidad y disminución de la concentración"
             ],
-            "Impacto militar": "Las bases cercanas a estas áreas podrían verse afectadas por el ruido industrial, dificultando las tareas de concentración de las tropas.",
-            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/4/4f/China_factory_noise.jpg"
+            "Impacto militar": "El ruido de los aviones puede interferir en las comunicaciones militares durante vuelos o actividades cerca de aeropuertos.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Jet_Landing.jpg"
         },
         {
-            "Ejemplo": "Ruido por tráfico aéreo en los aeropuertos",
-            "Lugar": "Aeropuerto de Los Ángeles, EE.UU.",
-            "Descripción": "El ruido generado por los aviones y el tráfico aéreo afecta gravemente a las comunidades cercanas.",
+            "Ejemplo": "Contaminación acústica en zonas rurales de India",
+            "Lugar": "India rural",
+            "Descripción": "Las actividades agrícolas, el ruido del ganado y el tráfico vehicular causan contaminación acústica en zonas rurales.",
             "Consecuencias": [
-                "Estrés crónico",
-                "Enfermedades auditivas",
-                "Interrupción del descanso nocturno"
+                "Trastornos de salud auditiva",
+                "Reducción de la productividad laboral",
+                "Disminución de la paz mental"
             ],
-            "Impacto militar": "El ruido en zonas de aeropuertos militares interfiere con las operaciones y los entrenamientos aéreos.",
-            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Los_Angeles_airport_noise.jpg"
+            "Impacto militar": "El ruido afecta las capacidades de concentración de las tropas durante entrenamientos en áreas rurales.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/0/06/Indian_Village.jpg"
         },
         {
-            "Ejemplo": "Contaminación acústica por tráfico ferroviario",
-            "Lugar": "Madrid, España",
-            "Descripción": "El ruido generado por el tráfico ferroviario afecta a los residentes cercanos a las vías.",
+            "Ejemplo": "Contaminación acústica en Tokio",
+            "Lugar": "Tokio, Japón",
+            "Descripción": "Tokio es una de las ciudades más ruidosas del mundo debido a la alta densidad de tráfico y actividades industriales.",
             "Consecuencias": [
-                "Aumento de la presión arterial",
-                "Alteraciones en los patrones de sueño",
-                "Reducción de la calidad de vida"
+                "Efectos sobre la salud cardiovascular",
+                "Estrés crónico en los habitantes",
+                "Problemas de audición a largo plazo"
             ],
-            "Impacto militar": "El ruido ferroviario interfiere con las operaciones de vigilancia y control de las fuerzas armadas en áreas cercanas a las vías.",
-            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Madrid_rail_traffic_noise.jpg"
+            "Impacto militar": "El ruido en zonas urbanas de alto tráfico puede interferir con las operaciones militares en escenarios urbanos.",
+            "Imagen": "https://upload.wikimedia.org/wikipedia/commons/5/52/Tokyo_traffic.jpg"
+        }
+    ]
 }
-
 # Selector de categorías
 tipo = st.selectbox("📚 Selecciona un tipo de contaminación:", list(conceptos.keys()))
 
