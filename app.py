@@ -155,4 +155,4 @@ for ejemplo in ejemplos[tipo]:
         for c in ejemplo["Consecuencias"]:
             st.write(f"- {c}")
         st.markdown("**🪖 Impacto militar:**")
-        st
+        st.write(ejemplo["Impacto militar"])
