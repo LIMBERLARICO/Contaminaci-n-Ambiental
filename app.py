@@ -456,6 +456,9 @@ if ver_formula == "Sí":
     st.write(f"**T** = {T} K")
     st.write(f"**n** = {n} moles")
 
+# Configurar la página antes de cualquier otro comando
+st.set_page_config(page_title="Mini Buscador Temático", layout="centered")
+
 # Título de la app
 st.title("🔎 Buscador Temático - Estilo Google")
 
@@ -472,21 +475,23 @@ respuestas = {
     "historia": "La historia estudia el pasado de la humanidad. ¿Te interesa alguna civilización o período en específico?",
     "guerra": "Las guerras han marcado profundamente la historia. ¿Buscas información sobre alguna en particular?",
     "tecnología": "La tecnología transforma la sociedad. Desde IA hasta satélites, ¿qué tema específico te interesa?",
-    "streamlit": "Streamlit es un framework de Python para crear apps web interactivas de forma sencilla."
+    "streamlit": "Streamlit es un framework de Python para crear apps web interactivas de forma sencilla. Si tienes preguntas sobre cómo usarlo, puedo ayudarte."
 }
 
 # Mostrar respuesta
 if pregunta:
     st.subheader("📚 Resultado de tu búsqueda:")
     encontrada = False
-    for clave in respuestas:
+    for clave, respuesta in respuestas.items():
         if clave in pregunta.lower():
-            st.success(respuestas[clave])
+            st.success(f"**Respuesta:** {respuesta}")
             encontrada = True
             break
     if not encontrada:
-        st.info("❔ No encontré una respuesta específica, pero pronto podré conectarme con más fuentes o IA para ayudarte mejor.")
-
+        st.info("❔ No encontré una respuesta específica, pero puedo seguir buscando más información. ¿Tienes otra palabra clave?")
+else:
+    st.info("Escribe un tema o pregunta para buscar información.")
+    
 # Mensaje de cierre
 st.markdown("---")
 st.caption("App educativa simple - Hecha con ❤️ usando Streamlit")
