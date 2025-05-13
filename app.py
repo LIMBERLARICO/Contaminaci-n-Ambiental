@@ -455,6 +455,7 @@ if ver_formula == "Sí":
     st.write(f"**R** = {R} atm·L/(mol·K)")
     st.write(f"**T** = {T} K")
     st.write(f"**n** = {n} moles")
+
 # Opción de búsqueda de ayuda
 buscar_ayuda = st.text_input("🔎 Escribe tu consulta para buscar ayuda o información:")
 
