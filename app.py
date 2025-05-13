@@ -465,9 +465,19 @@ cse_id = 'tu_cse_id'  # Reemplaza con tu CSE ID
 
 # Función para realizar la búsqueda en Google
 def google_search(query, api_key, cse_id, num_results=5):
-    service = build("customsearch", "v1", developerKey=api_key)
-    res = service.cse().list(q=query, cx=cse_id, num=num_results).execute()
-    return res['items']
+    try:
+        # Conexión con la API de Google Custom Search
+        service = build("customsearch", "v1", developerKey=api_key)
+        
+        # Realiza la consulta a la API con los parámetros adecuados
+        res = service.cse().list(q=query, cx=cse_id, num=num_results).execute()
+        
+        # Devuelve los resultados encontrados
+        return res['items']
+    
+    except Exception as e:
+        st.error(f"Ocurrió un error al buscar: {e}")
+        return []
 
 # Interfaz para que el usuario ingrese una pregunta
 query = st.text_input("💬 Escribe tu pregunta o tema de búsqueda:")
