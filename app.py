@@ -457,6 +457,10 @@ if ver_formula == "Sí":
     st.write(f"**n** = {n} moles")
 
 
+# app.py
+import streamlit as st
+import openai
+
 # Configurar primero
 st.set_page_config(page_title="Asistente IA", layout="centered")
 
@@ -495,4 +499,3 @@ if st.button("Buscar respuesta"):
             st.write(respuesta)
     else:
         st.warning("Por favor, escribe una pregunta.")
-
