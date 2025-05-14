@@ -458,10 +458,6 @@ if ver_formula == "Sí":
 
 
 
-import openai  # ✅ Importación necesaria para usar openai
-
-# Configurar la página al principio del script
-st.set_page_config(page_title="Asistente IA", layout="centered")
 
 # Título de la app
 st.title("🤖 Asistente Inteligente")
