@@ -457,7 +457,10 @@ if ver_formula == "Sí":
     st.write(f"**n** = {n} moles")
 
 
+import openai  # ✅ Importación necesaria para usar openai
 
+# Configurar la página al principio del script
+st.set_page_config(page_title="Asistente IA", layout="centered")
 
 # Título de la app
 st.title("🤖 Asistente Inteligente")
@@ -494,4 +497,3 @@ if st.button("Buscar respuesta"):
             st.write(respuesta)
     else:
         st.warning("Por favor, escribe una pregunta antes de buscar.")
-
