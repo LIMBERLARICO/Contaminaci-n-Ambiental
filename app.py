@@ -458,19 +458,23 @@ if ver_formula == "Sí":
 
 
 
+import openai  # ✅ Importación necesaria para usar openai
 
-# Título
-st.title("💬 Asistente Inteligente")
-st.markdown("Haz cualquier pregunta y recibirás una respuesta precisa basada en inteligencia artificial.")
+# Configurar la página al principio del script
+st.set_page_config(page_title="Asistente IA", layout="centered")
 
-# API Key de OpenAI (reemplaza con la tuya)
-openai.api_key = "TU_API_KEY_AQUI"  # 🔒 Reemplaza con tu clave real
+# Título de la app
+st.title("🤖 Asistente Inteligente")
+st.markdown("Haz cualquier pregunta y recibirás una respuesta usando inteligencia artificial.")
 
-# Función para responder preguntas
+# 🚨 IMPORTANTE: Reemplaza con tu propia clave API desde https://platform.openai.com/account/api-keys
+openai.api_key = "TU_API_KEY_AQUI"  # ← Pega tu clave aquí
+
+# Función que llama a OpenAI para responder preguntas
 def responder_pregunta(pregunta):
     try:
         respuesta = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",  # O usa "gpt-4" si tienes acceso
+            model="gpt-3.5-turbo",  # Cambia a "gpt-4" si tienes acceso
             messages=[
                 {"role": "system", "content": "Eres un asistente experto y amable."},
                 {"role": "user", "content": pregunta}
@@ -480,17 +484,18 @@ def responder_pregunta(pregunta):
         )
         return respuesta["choices"][0]["message"]["content"]
     except Exception as e:
-        return f"⚠️ Ocurrió un error al procesar tu pregunta: {e}"
+        return f"❌ Error: {e}"
 
-# Entrada del usuario
-pregunta = st.text_input("✍️ Escribe tu pregunta aquí:")
+# Campo para que el usuario escriba su pregunta
+pregunta = st.text_input("✍️ Escribe tu pregunta:")
 
-# Botón para obtener la respuesta
+# Botón para activar la búsqueda
 if st.button("Buscar respuesta"):
     if pregunta:
-        with st.spinner("🤖 Pensando..."):
+        with st.spinner("Buscando la mejor respuesta..."):
             respuesta = responder_pregunta(pregunta)
-            st.success("✅ Aquí tienes tu respuesta:")
+            st.success("✅ Respuesta:")
             st.write(respuesta)
     else:
-        st.warning("Por favor, escribe una pregunta.")
+        st.warning("Por favor, escribe una pregunta antes de buscar.")
+
