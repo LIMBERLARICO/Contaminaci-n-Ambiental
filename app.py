@@ -455,3 +455,44 @@ if ver_formula == "Sí":
     st.write(f"**R** = {R} atm·L/(mol·K)")
     st.write(f"**T** = {T} K")
     st.write(f"**n** = {n} moles")
+
+
+# Configurar primero
+st.set_page_config(page_title="Asistente IA", layout="centered")
+
+# Título
+st.title("💬 Asistente Inteligente")
+st.markdown("Haz cualquier pregunta y recibirás una respuesta precisa basada en inteligencia artificial.")
+
+# API Key de OpenAI (reemplaza con la tuya)
+openai.api_key = "TU_API_KEY_AQUI"  # 🔒 Reemplaza con tu clave real
+
+# Función para responder preguntas
+def responder_pregunta(pregunta):
+    try:
+        respuesta = openai.ChatCompletion.create(
+            model="gpt-3.5-turbo",  # O usa "gpt-4" si tienes acceso
+            messages=[
+                {"role": "system", "content": "Eres un asistente experto y amable."},
+                {"role": "user", "content": pregunta}
+            ],
+            temperature=0.7,
+            max_tokens=500
+        )
+        return respuesta["choices"][0]["message"]["content"]
+    except Exception as e:
+        return f"⚠️ Ocurrió un error al procesar tu pregunta: {e}"
+
+# Entrada del usuario
+pregunta = st.text_input("✍️ Escribe tu pregunta aquí:")
+
+# Botón para obtener la respuesta
+if st.button("Buscar respuesta"):
+    if pregunta:
+        with st.spinner("🤖 Pensando..."):
+            respuesta = responder_pregunta(pregunta)
+            st.success("✅ Aquí tienes tu respuesta:")
+            st.write(respuesta)
+    else:
+        st.warning("Por favor, escribe una pregunta.")
+
